@@ -1,0 +1,21 @@
+# Hosting MySQL Server on AWS EC2 Instance
+
+## Description
+
+This repository contains a step-by-step guide to hosting MySQL Server on an AWS EC2 instance. It covers the installation of MySQL, configuring the server, and testing the installation with sample SQL queries.
+
+## Prerequisites
+
+- An **AWS EC2 instance** (Ubuntu or any Linux-based AMI)
+- **SSH access** to the EC2 instance
+- **Sudo privileges** on the EC2 instance
+
+## Steps to Host MySQL on AWS EC2
+
+### Step 1: Update the System
+
+Before installing any software, it's important to ensure your system is up to date with the latest packages and security patches.
+
+```bash
+sudo apt update
+
