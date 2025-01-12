@@ -34,6 +34,6 @@
 
 * INSERT INTO table1 VALUES(1, 'Parth'), (2, 'Gabru'), (3, 'chuchiyang');
 
-* SELECT * FROM t
+* SELECT * FROM table1;
 
-![Screenshot 2025-01-10 165519](https://github.com/user-attachments/assets/1aff0bc5-ad60-48c1-b582-91fa9d7adaf9)able1;
+![Screenshot 2025-01-10 165519](https://github.com/user-attachments/assets/1aff0bc5-ad60-48c1-b582-91fa9d7adaf9)
