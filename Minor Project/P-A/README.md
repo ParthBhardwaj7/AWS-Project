@@ -6,7 +6,7 @@
 ## Step 2:
 * Install MySql
 * sudo apt install mysql-server
-* 
+  
 ![Screenshot 2025-01-10 165940](https://github.com/user-attachments/assets/a36a8ace-928f-46b9-a13c-51997706a21c)
 
 
