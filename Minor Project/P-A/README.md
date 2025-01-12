@@ -17,8 +17,8 @@
 
 ## Step 5: 
 * Update the password for the MySql Server
-* ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'place-your-password-here';
-
+* ALTER USER 'root'@'localhost' IDENTIFIED BY 'newpassword';
+  
 * FLUSH PRIVILEGES;
 
 ## Step 6: 
@@ -29,6 +29,6 @@
 
 * CREATE TABLE table1 (id INT, name VARCHAR(45));
 
-INSERT INTO table1 VALUES(1, 'Virat'), (2, 'Sachin'), (3, 'Dhoni'), (4, 'ABD');
+* INSERT INTO table1 VALUES(1, 'Parth'), (2, 'Gabru'), (3, 'chuchiyang');
 
-SELECT * FROM table1;
+* SELECT * FROM table1;
