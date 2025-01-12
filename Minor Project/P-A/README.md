@@ -6,6 +6,9 @@
 ## Step 2:
 * Install MySql
 * sudo apt install mysql-server
+* 
+![Screenshot 2025-01-10 165940](https://github.com/user-attachments/assets/a36a8ace-928f-46b9-a13c-51997706a21c)
+
 
 ## Step 3: 
 * Check the Status of MySql (Active or Inactive)
@@ -31,4 +34,5 @@
 
 * INSERT INTO table1 VALUES(1, 'Parth'), (2, 'Gabru'), (3, 'chuchiyang');
 
-* SELECT * FROM table1;
+* SELECT * FROM t
+![Screenshot 2025-01-10 165519](https://github.com/user-attachments/assets/1aff0bc5-ad60-48c1-b582-91fa9d7adaf9)able1;
