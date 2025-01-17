@@ -1,6 +1,6 @@
-#Give EC2 Instance permissions with IAM Role
+# Give EC2 Instance permissions with IAM Role
 
-##Steps
+## Steps
 * Go to IAM Dashboard
 
 * Click on User in the left navigation pane
