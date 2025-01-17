@@ -19,3 +19,12 @@ aws configure
 * Enter the access key and secret access keys you generated earlier
 * Enter the name of your region
 * Create a S3 bucket from AWS CLI with a random name. If you have proper permissions you will be able to both create and list s3 buckets.
+```
+aws s3 mb s3://checkss
+```
+* List your S3 buckets.
+```aws s3 ls ```
+* You just used Access keys to connect to S3 from EC2.
+* View the credential file. Hardcoded credentials are insecure from a security perspective.
+```cat ~/.aws/credentials```
+* Delete the file . This will remove the credentials
