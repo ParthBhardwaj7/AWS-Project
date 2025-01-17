@@ -14,7 +14,7 @@
 * Configure the AWS CLI
 
 ```bash
-aws configure
+aws configure```
 
 * Enter the access key and secret access keys you generated earlier
 * Enter the name of your region
