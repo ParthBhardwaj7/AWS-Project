@@ -23,7 +23,9 @@ aws configure
 aws s3 mb s3://checkss
 ```
 * List your S3 buckets.
-```aws s3 ls ```
+```
+aws s3 ls
+```
 * You just used Access keys to connect to S3 from EC2.
 * View the credential file. Hardcoded credentials are insecure from a security perspective.
 ```cat ~/.aws/credentials```
