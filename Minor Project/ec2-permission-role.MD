@@ -13,9 +13,9 @@
 * Let's say you want to work with Amazon S3 from this isntance. Make some buckets and list some buckets. You can use the AWS Command Line interface. Amazon Linux AMI has this installed already.
 * Configure the AWS CLI
 
-```bash
-aws configure```
-
+```
+aws configure
+```
 * Enter the access key and secret access keys you generated earlier
 * Enter the name of your region
 * Create a S3 bucket from AWS CLI with a random name. If you have proper permissions you will be able to both create and list s3 buckets.
