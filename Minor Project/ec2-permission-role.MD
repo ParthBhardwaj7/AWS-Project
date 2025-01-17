@@ -13,4 +13,4 @@
 * Let's say you want to work with Amazon S3 from this isntance. Make some buckets and list some buckets. You can use the AWS Command Line interface. Amazon Linux AMI has this installed already.
 * Configure the AWS CLI
 
-'''aws configure
+'''aws configure'''
