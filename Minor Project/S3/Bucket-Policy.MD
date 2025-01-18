@@ -35,6 +35,7 @@ Use the following JSON policy for read-only access to the bucket:
     }
   ]
 }
+```
 ![Image](https://github.com/user-attachments/assets/ec4045fa-2190-403d-877c-f82e5dba155c)
 
 It Can Be accesed by an IAM user With AWS CLI and if this Is need To be accesed By AWS Console Then YOU have to Create an INLINE Policy for user or give console access to user
