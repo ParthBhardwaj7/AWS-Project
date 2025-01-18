@@ -10,7 +10,7 @@
 * Click Add Users (if creating a new user) or select an existing user.
 * For a new user, provide a User name and select Access key - Programmatic access if the user will access the bucket via CLI or API.
 ## Step 3: Attach a Policy to the User
-* You need to attach a policy that grants read-only access to the specific S3 bucket.
+* You need to attach a policy that grants read-only access or write-only access or full access to the specific S3 bucket.
 * Option 1: Attach an AWS Managed Policy
 * On the user’s permissions page, click Add Permissions → Attach policies directly.
 * Search for the AmazonS3ReadOnlyAccess managed policy and select it.
