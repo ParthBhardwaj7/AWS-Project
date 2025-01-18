@@ -13,5 +13,5 @@
 * You need to attach a policy that grants read-only access or write-only access or full access to the specific S3 bucket.
 * Option 1: Attach an AWS Managed Policy
 * On the user’s permissions page, click Add Permissions → Attach policies directly.
-* Search for the AmazonS3ReadOnlyAccess managed policy and select it.
+* Search for the AmazonS3ReadOnlyAccess or AmazonS3WriteOnlyAccess or AmazonS3FullAccess managed policy and select it.
 * Click Next → Review → Add permissions.
