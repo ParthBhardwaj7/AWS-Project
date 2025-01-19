@@ -105,6 +105,7 @@ This guide provides step-by-step instructions on how to enable Legal Hold for an
    - Navigate to the Amazon S3 console.
    - Select the bucket containing the object.
    - Select the object for which you want to enable Legal Hold.
+   - Legal Hold is Object specified.
 
 2. **Go to the Properties Tab:**
    - Click on the `Properties` tab.
