@@ -8,6 +8,8 @@ Amazon S3 Object Lock is used to prevent objects from being deleted or overwritt
 1. **Object Lock must be enabled when creating the bucket.**  
    ⚠️ Object Lock can also be enabled for existing buckets .
 2. **Versioning** must also be enabled for the bucket.
+![Image](https://github.com/user-attachments/assets/6f002711-1f6e-479b-a499-1ea4fad56ed1)
+
 
 ---
 
@@ -20,6 +22,8 @@ Amazon S3 Object Lock is used to prevent objects from being deleted or overwritt
    - Acknowledge the warning that enabling Object Lock cannot be undone by checking the confirmation box.
 5. Ensure that **Versioning** is also enabled (it is automatically enabled with Object Lock).
 6. Click **Create bucket**.
+![Image](https://github.com/user-attachments/assets/d6cb4eb8-9333-4771-9b04-bcb4d6ad6df9)
+
 
 ---
 
@@ -37,6 +41,9 @@ Amazon S3 Object Lock is used to prevent objects from being deleted or overwritt
 3. Set the **Default retention period**:
    - Enter the number of **days** or **years** for which objects should be retained.
 4. Click **Save changes**.
+![Image](https://github.com/user-attachments/assets/c2f840ce-774b-4e2f-9cb8-b9c16c861da5)
+
+![Image](https://github.com/user-attachments/assets/1710692f-3f5d-4322-8d3b-7c40a57a5e64)
 
 ---
 
@@ -58,11 +65,3 @@ Use the following command to upload an object and enable Object Lock:
 aws s3api put-object --bucket example-bucket --key file.txt --body file.txt \
 --object-lock-mode Governance --object-lock-retain-until-date YYYY-MM-DD
 ```
-
-![Image](https://github.com/user-attachments/assets/6f002711-1f6e-479b-a499-1ea4fad56ed1)
-
-![Image](https://github.com/user-attachments/assets/d6cb4eb8-9333-4771-9b04-bcb4d6ad6df9)
-
-![Image](https://github.com/user-attachments/assets/c2f840ce-774b-4e2f-9cb8-b9c16c861da5)
-
-![Image](https://github.com/user-attachments/assets/1710692f-3f5d-4322-8d3b-7c40a57a5e64)
