@@ -95,3 +95,32 @@ Use the following command to upload an object and enable Object Lock:
 aws s3api put-object --bucket example-bucket --key file.txt --body file.txt \
 --object-lock-mode Governance --object-lock-retain-until-date YYYY-MM-DD
 ```
+# Enabling Legal Hold on an S3 Object
+
+This guide provides step-by-step instructions on how to enable Legal Hold for an object in an Amazon S3 bucket using the AWS Management Console and AWS CLI.
+
+## Option 1: AWS Management Console
+
+1. **Select the Object:**
+   - Navigate to the Amazon S3 console.
+   - Select the bucket containing the object.
+   - Select the object for which you want to enable Legal Hold.
+
+2. **Go to the Properties Tab:**
+   - Click on the `Properties` tab.
+
+3. **Scroll to the Legal Hold Section:**
+   - Scroll down to the `Legal Hold` section.
+
+4. **Toggle the Legal Hold Option:**
+   - Toggle the `Legal hold` option to `ON`.
+
+5. **Save Changes:**
+   - Click `Save changes`.
+
+## Option 2: AWS CLI
+
+To enable Legal Hold using the AWS CLI, use the following command:
+
+```bash
+aws s3api put-object-legal-hold --bucket example-bucket --key file.txt --legal-hold-status ENABLED
