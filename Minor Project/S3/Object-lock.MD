@@ -1,6 +1,36 @@
-# S3 Object Lock: Step-by-Step Guide
+# Amazon S3 Object Lock & Legal Hold
 
-Amazon S3 Object Lock is used to prevent objects from being deleted or overwritten for a specified period. This guide explains how to enable and configure Object Lock, including both **Governance Mode** and **Compliance Mode**.
+This guide explains **Amazon S3 Object Lock** and **Legal Hold**, their modes, and how to use them for protecting data from accidental or malicious deletions. Both features are crucial for implementing **Write Once, Read Many (WORM)** policies and meeting regulatory or compliance requirements.
+
+---
+
+## **What is Object Lock?**
+
+**Object Lock** allows you to enforce **write-once-read-many (WORM)** policies on Amazon S3 objects. This ensures that data cannot be modified or deleted during a specified retention period, providing strong protection against accidental or malicious actions.
+
+### **Modes of Object Lock**
+
+1. **Governance Mode**:  
+   - Allows authorized users (e.g., IAM Admins) to override or remove the lock.
+   - Permissions required: `s3:BypassGovernanceRetention`.
+   - Suitable for environments where some level of administrative control is needed.
+
+2. **Compliance Mode**:  
+   - Strictly enforces the retention policy.
+   - Even the root user or administrators cannot modify or delete objects during the retention period.
+   - Ideal for meeting regulatory compliance (e.g., SEC Rule 17a-4).
+
+---
+
+## **What is Legal Hold?**
+
+**Legal Hold** is a feature of Object Lock that provides **indefinite protection** to an object, regardless of its retention period. It ensures that the object cannot be deleted or modified until the Legal Hold is explicitly removed.
+
+### **Key Features of Legal Hold**
+1. **No Expiration Date**: Legal Hold doesn’t expire, unlike retention periods.
+2. **Overrides Retention Settings**: Even after the retention period ends, objects with Legal Hold cannot be deleted or modified.
+3. **Use Case**: Ideal for legal or regulatory compliance where indefinite protection is required.
+
 
 ---
 
