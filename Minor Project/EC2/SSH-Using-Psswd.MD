@@ -30,7 +30,7 @@ ssh ec2-user@your-instance-up.address
 
 You will be prompted for a password. Enter the password and you should be successfully logged in to the ec2 instace.
 
-![Image](https://github.com/user-attachments/assets/3f157d1c-da7f-462e-af8a-2995d3312a3c
+![Image](https://github.com/user-attachments/assets/3f157d1c-da7f-462e-af8a-2995d3312a3c)
 
 
 # Part 2: Steps to enable password authentication and set password for first login on EC2
