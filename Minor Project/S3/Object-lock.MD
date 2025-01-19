@@ -57,3 +57,12 @@ Use the following command to upload an object and enable Object Lock:
 ```bash
 aws s3api put-object --bucket example-bucket --key file.txt --body file.txt \
 --object-lock-mode Governance --object-lock-retain-until-date YYYY-MM-DD
+```
+
+![Image](https://github.com/user-attachments/assets/6f002711-1f6e-479b-a499-1ea4fad56ed1)
+
+![Image](https://github.com/user-attachments/assets/d6cb4eb8-9333-4771-9b04-bcb4d6ad6df9)
+
+![Image](https://github.com/user-attachments/assets/c2f840ce-774b-4e2f-9cb8-b9c16c861da5)
+
+![Image](https://github.com/user-attachments/assets/1710692f-3f5d-4322-8d3b-7c40a57a5e64)
