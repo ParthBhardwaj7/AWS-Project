@@ -1,5 +1,5 @@
 # Symmetric Key Encryption
-##What is Symmetric Key Encryption?
+## What is Symmetric Key Encryption?
 * A type of encryption where the same key is used for both encrypting and decrypting data.
 * It is fast and efficient, making it suitable for encrypting large amounts of data.
 ###Key Features:
@@ -33,6 +33,9 @@ Server-Side Encryption is when AWS encrypts data on your behalf before storing i
 * Easy to Use: No need to manage encryption keys on the client side.
 * Transparent to Users: Data is automatically encrypted when stored and decrypted when retrieved.
 ## SSE Options in AWS:
+
+![Image](https://github.com/user-attachments/assets/133966a5-30b5-49d2-9f9e-a60129d29e24)
+
 ### SSE-S3 (AWS-Managed Keys):
 
 * AWS manages both the encryption and the keys.
