@@ -41,3 +41,30 @@ aws s3 ls
 * Delete the file . This will remove the credentials
 
 ![Image](https://github.com/user-attachments/assets/6829442e-3b14-4371-b48f-40b8fa706179)
+
+#PART 2 : Permissions with IAM Roles
+* Go to IAM Dashboard and click on Roles 
+* Click Create Role and Select EC2 to be the service using this role
+* Click next Permissions and select AmazonS3FullAccess policy and attach to this role. Also select AmazonEC2FullAccess policy for this role. We will reuse this role in the next lab.
+* Click Next Until you see the screen to enter the Role Name.Enter the name and description for the role. Verify you have S3 and EC2 access policies attached and create the Role.
+![Image](https://github.com/user-attachments/assets/5893b0a5-c4f4-425d-b0fd-9b105edee2ad)
+* Go to EC2 Instance Page. Select the EC2 instance , Click Actions and Attach IAM Role. Attach the role we created in the previous step.
+![Image](https://github.com/user-attachments/assets/411d6f10-6da9-4ae2-bfad-be1673a70326)
+* Now go back to the EC2 instance.
+
+* Enter command to list s3 buckets. You should be able to
+
+```
+aws s3 ls --region us-east-1
+```
+* (OPTIONAL) Remove the Role we added a few steps back and try the S3 list command again. It shouldn't work.
+* Now you see how to give access to S3 and other AWS services using access keys and Role. And you also know Roles are safer because it uses temporary Credentials.
+
+* Let's keep the same instance for the Next Lab
+* How Roles work
+* Roles use temporary credentials that rotate every 30 minutes or so and are a lot safer than hardcoding keys.
+
+* Type this command inside your EC2 to view temporary credentials for the role attached to EC2
+``` 
+curl 169.254.169.254/latest/meta-data/iam/security-credentials/{your-role-name}
+```
