@@ -24,9 +24,18 @@ sudo service ssh restart
 ssh ec2-user@your-instance-up.address
 ```
 You will be prompted for a password. Enter the password and you should be successfully logged in to the ec2 instace
+![Image](https://github.com/user-attachments/assets/23d5406f-4938-4843-9d91-e2df6b714aaf)
 
-Part 2: Steps to enable password authentication and set password for first login on EC2
-Paste this script to your EC2 userdata during launch to enable password ssh for your first login. Change user and pass by changing lines under TODO in the below script.
+![Image](https://github.com/user-attachments/assets/d35cc24e-686f-4031-8686-ee1b767e6e26)
+
+![Image](https://github.com/user-attachments/assets/56bf7e0d-d1ff-4099-b849-5e6e6d544967)
+
+![Image](https://github.com/user-attachments/assets/2a67b803-43ac-4b13-b9bf-459b049218b4)
+
+![Image](https://github.com/user-attachments/assets/3f157d1c-da7f-462e-af8a-2995d3312a3c)
+
+# Part 2: Steps to enable password authentication and set password for first login on EC2
+* Paste this script to your EC2 userdata during launch to enable password ssh for your first login. Change user and pass by changing lines under TODO in the below script.
 
 ```
 #!/bin/bash
@@ -40,7 +49,7 @@ useradd bob
 echo "password123" | passwd --stdin bob
 ```
 
-If you make no changes to the script , you can login to EC2 after a few minutes using this command. Passoword is password123 . Replace the IP with your EC2 IP
+* If you make no changes to the script , you can login to EC2 after a few minutes using this command. Passoword is password123 . Replace the IP with your EC2 IP
 
 ```
 ssh bob@11.22.23.24
