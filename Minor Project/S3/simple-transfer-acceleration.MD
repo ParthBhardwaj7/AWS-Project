@@ -63,6 +63,7 @@ my-website-bucket.s3-accelerate.amazonaws.com
 ```
 aws s3 cp /path/to/your/file.txt s3://your-bucket-name/your-file.txt --endpoint-url https://your-bucket-name.s3-accelerate.amazonaws.com
 ```
+![Image](https://github.com/user-attachments/assets/57f99a1c-633c-4047-8363-fb939c16ed30)
 Example:
 ```
 aws s3 cp /home/user/myfile.txt s3://my-website-bucket/myfile.txt --endpoint-url https://my-website-bucket.s3-accelerate.amazonaws.com
