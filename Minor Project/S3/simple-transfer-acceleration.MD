@@ -37,6 +37,7 @@ aws s3 cp /home/user/myfile.txt s3://my-website-bucket/myfile.txt
 ```
 aws s3 ls s3://your-bucket-name/your-file.txt
 ```
+![Image](https://github.com/user-attachments/assets/cf308177-9445-4bf4-ab9b-f0996dd36e06)
 ## Step 3: Enable Transfer Acceleration for Your S3 Bucket
 ### Step 3.1: Enable S3 Transfer Acceleration
 * Log in to AWS Console and navigate to the S3 service.
