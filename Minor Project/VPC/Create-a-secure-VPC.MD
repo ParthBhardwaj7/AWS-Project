@@ -60,6 +60,7 @@
 * Go to the Subnet associations tab in the public route table.
 * Click Edit subnet associations.
 * Select your PublicSubnet and click Save changes.
+![Image](https://github.com/user-attachments/assets/1da072cc-dae9-4989-a9c0-a3f321b750bc)
 
 ![Image](https://github.com/user-attachments/assets/4fc36e5f-feec-49eb-bad1-46a8164ccdea)
 
