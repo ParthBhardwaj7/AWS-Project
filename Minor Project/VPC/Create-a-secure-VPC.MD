@@ -1,3 +1,4 @@
+# Step-by-Step guide to setting up a secure Virtual Private Cloud (VPC) in AWS:
 ![Image](https://github.com/user-attachments/assets/f8cbf228-1fe9-4c0b-b34e-2f45e9033019)
 ## Step 1: Log in to the AWS Management Console
 * Open AWS Management Console.
@@ -19,22 +20,18 @@
 
 * Go to Subnets:
 * Click Create subnet.
-* Create Public Subnet:
+* Create 2 Public Subnet in Different AZ:
 * VPC ID: Select the VPC you just created.
 * Subnet name: PublicSubnet.
 * Availability Zone: Select a zone (e.g., us-east-1a).
 * IPv4 CIDR block: Provide a range (e.g., 10.0.1.0/24).
 * Click Create subnet.
-* Create Private Subnet:
+* Create 4 Private Subnet 2 in each AZ:
 * Follow the same steps as above but name it PrivateSubnet.
 * Use a different CIDR block (e.g., 10.0.2.0/24).
 ![Image](https://github.com/user-attachments/assets/d4e874ea-3e7f-4a02-b4c9-2802797cc88b)
 ![Image](https://github.com/user-attachments/assets/624d2aab-8e59-48e8-8a3d-fd3c8170b4db)
 
-![Image](https://github.com/user-attachments/assets/4fc36e5f-feec-49eb-bad1-46a8164ccdea)
-
-
-![Image](https://github.com/user-attachments/assets/0d22b81b-d868-4496-ac87-0e9e89d92834)
 ## Step 4: Create an Internet Gateway
 * Go to Internet Gateways:
 * Click Create internet gateway.
@@ -58,10 +55,17 @@
 * Destination: 0.0.0.0/0.
 * Target: Select the internet gateway.
 * Click Save changes.
+* Select NAT Gateway on both Private Route Table to their own public Subnet
 * Associate Public Subnet:
 * Go to the Subnet associations tab in the public route table.
 * Click Edit subnet associations.
 * Select your PublicSubnet and click Save changes.
+
+![Image](https://github.com/user-attachments/assets/4fc36e5f-feec-49eb-bad1-46a8164ccdea)
+
+
+![Image](https://github.com/user-attachments/assets/0d22b81b-d868-4496-ac87-0e9e89d92834)
+
 ## Step 6: Create a NAT Gateway (For Private Subnet Internet Access)
 * Go to NAT Gateways:
 * Click Create NAT gateway.
@@ -83,6 +87,7 @@
 ![Image](https://github.com/user-attachments/assets/392ac64d-f4a9-4853-b000-acfdac014ec6)
 
 ## Step 7: Security Groups
+![Image](https://github.com/user-attachments/assets/67c0730c-cb02-41a4-a630-03def61987ef)
 * Create a Security Group for Public Access:
 * Go to Security Groups and click Create security group.
 * Name: PublicAccessSG.
@@ -96,6 +101,13 @@
 * Allow traffic from PublicAccessSG for application-specific ports (e.g., 3306 for MySQL).
 * Add outbound rules:
 * Allow all outbound traffic.
+![Image](https://github.com/user-attachments/assets/cf7d4362-45a1-4e35-9e79-7b23b0062e9a)
+
+![Image](https://github.com/user-attachments/assets/60c6716c-4b99-4b60-bcaf-6de695a7fd43)
+
+![Image](https://github.com/user-attachments/assets/684c2ccc-2b22-47b2-a863-d683c43c80dd)
+
+![Image](https://github.com/user-attachments/assets/5f52146c-bacd-4fce-ad5a-149f741b9b36)
 ## Step 8: Launch EC2 Instances
 * Launch Public Instance:
 * Go to EC2 > Launch Instance.
