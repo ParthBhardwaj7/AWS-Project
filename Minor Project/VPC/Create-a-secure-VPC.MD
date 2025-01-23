@@ -1,5 +1,7 @@
 # Step-by-Step guide to setting up a secure Virtual Private Cloud (VPC) in AWS:
+
 ![Image](https://github.com/user-attachments/assets/f8cbf228-1fe9-4c0b-b34e-2f45e9033019)
+
 ## Step 1: Log in to the AWS Management Console
 * Open AWS Management Console.
 * Navigate to VPC under the "Networking & Content Delivery" section.
