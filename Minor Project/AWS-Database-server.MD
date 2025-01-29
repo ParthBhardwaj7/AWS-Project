@@ -1,6 +1,6 @@
 # AWS x Databases project: Aurora Database with Web Server:
 
-![Image](https://github.com/user-attachments/assets/b5118194-0f9a-4d6b-94c7-5e5f723ac68a)
+![Image](https://github.com/user-attachments/assets/dea3d88d-28ff-4810-9784-6d614b161251)
 ## Login with your IAM user:
 * Head to your AWS Account as the root user.
 * Open the AWS IAM console.
