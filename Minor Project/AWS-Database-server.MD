@@ -1,4 +1,6 @@
 # AWS x Databases project: Aurora Database with Web Server:
+
+![Image](https://github.com/user-attachments/assets/b5118194-0f9a-4d6b-94c7-5e5f723ac68a)
 ## Login with your IAM user:
 * Head to your AWS Account as the root user.
 * Open the AWS IAM console.
@@ -23,6 +25,11 @@
 * Paste and go to your copied console sign-in URL.
 * Open your downloaded .csv file containing your user's access instructions.
 * Log in using your IAM user's username and password in the .csv file.
+
+![Image](https://github.com/user-attachments/assets/eecb3c34-c8d0-4561-9e40-a2879e0b3694)
+![Image](https://github.com/user-attachments/assets/96dc8f4a-2d68-43db-9589-26962e933a4a)
+
+![Image](https://github.com/user-attachments/assets/ad6a6525-fb0f-4584-b65d-9ea96883b346)
 
 ## Launch an EC2 instance:
 * In this step, we're going to create an Amazon EC2 instance using our default VPC and default subnets.
@@ -55,6 +62,9 @@
 * Wait until Instance state for your instance is Running before continuing.
 
 ## Create an Aurora MySQL Database
+![Image](https://github.com/user-attachments/assets/4d9f8b96-f64a-4767-80aa-662f8fb7eb05)
+
+![Image](https://github.com/user-attachments/assets/3330a8e9-d139-4c30-b743-2a0bda2f02b8)
 * First things first... we need a relational database. Then we can connect it to our web app server and get cracking. 
 * In this step, you're going to:
 * Create an Aurora relational database from scratch
@@ -76,6 +86,9 @@
 * Master password: Type a password (eg. n3xtw0rk)
 * Confirm password: Retype the password.
 * Make sure you save your database login details somewhere safe! You'll need them later on.
+
+![Image](https://github.com/user-attachments/assets/100016da-831d-4cd3-ace5-15153dbad3b4)
+
 * Leave the Cluster storage configuration settings as default.
 * In the Instance configuration section, set these values:
 * Burstable classes (includes t classes)
@@ -97,3 +110,13 @@
 * Wait for the Status of your new DB cluster to show as Available.
 * Select the DB identifier of your top database to take a look at the details.
 * Notice that there are two Endpoints in our Database. Cool! This is our cluster in action.
+![Image](https://github.com/user-attachments/assets/f287f2a6-ef14-4a29-9c5f-5d4aa388d613)
+
+
+![Image](https://github.com/user-attachments/assets/ab723570-de37-4dc3-b09e-be94a737cc82)
+
+![Image](https://github.com/user-attachments/assets/3cf7adca-6a59-4271-9928-7ebb679fc4b0)
+![Image](https://github.com/user-attachments/assets/e91d45f1-aca4-489b-8647-d73036e192df)
+
+![Image](https://github.com/user-attachments/assets/137a4faa-1f8e-46b1-9bf3-d155c9cdd89b)
+
